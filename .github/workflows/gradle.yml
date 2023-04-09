@@ -23,20 +23,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-<<<<<<< HEAD
-    - uses: actions/checkout@v3
+     - uses: actions/checkout@v3
     
-    - name: Set up JDK 11
-      uses: actions/setup-java@v3
-      with:
+     - name: Set up JDK 11
+       uses: actions/setup-java@v3
+       with:
         java-version: '11'
         distribution: 'temurin'
         
-    - name: Build with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-      with:
+     - name: Build with Gradle
+       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+       with:
         arguments: build
-=======
      - uses: actions/checkout@v3
 
      - uses: actions/setup-java@v3
@@ -47,5 +45,4 @@ jobs:
      - name: Build with Gradle
        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
        with:
-         arguments: build
->>>>>>> 6de32fc92249bba22f631aec37ba565a9b616457
+         arguments: build 6de32fc92249bba22f631aec37ba565a9b616457
